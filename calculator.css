@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator {
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 280px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px;
+    background: #2b2b3d;
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: #3a3a55;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #5f5fff;
+}
+
+.operator { background: #ff7a18; }
+.operator:hover { background: #ff9500; }
+
+.equal { background: #00c9a7; grid-column: span 2; }
+.equal:hover { background: #00e6c3; }
+
+.clear { background: #ff4d4d; }
+.clear:hover { background: #ff1a1a; }
+
+.history {
+    width: 220px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow-y: auto;
+    max-height: 360px;
+}
+
+.history h3 {
+    text-align: center;
+}
+
+.history-item {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    background: #f1f1f1;
+}
